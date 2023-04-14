@@ -1,0 +1,38 @@
+{
+  "name": "fhe-ecdsa-multisig",
+  "version": "0.0.0",
+  "description": "Javascript library of ecdsa multisig with Fully Homomorphic Encryption",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "run:server": "npx functions-framework --target=bobalice",
+    "run:client": "node ./scripts/steps.js",
+    "test": "mocha"
+  },
+  "author": "Leona Hioki",
+  "license": "ISC",
+  "dependencies": {
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/transactions": "^5.7.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "eciesjs": "^0.3.16",
+    "elliptic": "^6.5.4",
+    "ethers": "^5",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
+    "node-seal": "^5.1.1"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.3",
+    "mocha": "^10.2.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "18.x"
+  }
+}
