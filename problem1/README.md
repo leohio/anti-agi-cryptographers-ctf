@@ -5,7 +5,7 @@
 ```sh
 npm i
 cp -n example.env .env # edit `PRIVATE_KEY`
-node ./index.js
+npm run run:server
 ```
 
 でサーバーを起動し、もう一つのターミナルを開いて
